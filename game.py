@@ -176,7 +176,6 @@ def drop_piece(row, col, piece):
 
 # Uses function in Search file to check for WIN
 def search(row, col, piece):
-    print(col_status)
     if search_right_or_left(board, row, col, piece) or search_up_or_down(board, row, col, piece):
         draw_board(red_coin, yellow_coin)
         game_over(piece)
@@ -227,10 +226,6 @@ def event_controller(red_coin, yellow_coin):
 
 
 # ------------------------ Different Screens & Related Functions ------------------------
-def rules_screen():
-    next_button = cls.Button
-
-
 def player_login_screen():
     run = True
 
@@ -392,7 +387,7 @@ def main_menu():
     title_img = pygame.image.load('./game_logo.png')
     title_img = pygame.transform.scale(title_img, (700, 243))
 
-    play_button = cls.Button(260, 500, 30, 30, (210, 0, 0), (0, 210, 0), rules_screen, "Play")
+    play_button = cls.Button(260, 500, 30, 30, (210, 0, 0), (0, 210, 0), player_login_screen, "Play")
     view_details_button = cls.Button(360, 500, 30, 30, (210, 0, 0), (0, 210, 0), details_screen, "View Details")
     quit_button = cls.Button(538, 500, 30, 30, (210, 0, 0), (0, 210, 0), sys.exit, "Quit")
 

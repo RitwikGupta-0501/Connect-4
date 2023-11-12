@@ -35,7 +35,7 @@ def get_user_details(user):
 # Updates players.txt with New Player Names
 def make_player(users):
     """
-    * Writes Usernames of Players in players.txt file to Allow connect.py to access them.\n
+    * Writes Usernames of Players in players.txt file to Allow game.py to access them.\n
     * Also creates a new entry in details.dat IF it Doesn't Exist.\n
     Parameters -
         user_no --> The N'th User we are logging in.
