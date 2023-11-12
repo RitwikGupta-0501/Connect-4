@@ -7,5 +7,5 @@ This project uses the PyGame library of python3.
 1. Download and unzip the code.
 2. Open the terminal in the code repository.
 3. Install PyGame using pip.
-4. Open and run connect.py.
+4. Open and run game.py.
 5. Enjoy the Game.
