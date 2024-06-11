@@ -9,3 +9,8 @@ This project uses the PyGame library of python3.
 3. Install PyGame using pip.
 4. Open and run game.py.
 5. Enjoy the Game.
+
+# What's in This Project
+1. It contains a basic player database made using Binary files (.dat)
+2. It contains self-coded buttons and text-boxs.
+3. It's a fun game!
