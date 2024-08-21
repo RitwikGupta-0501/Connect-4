@@ -1,14 +1,32 @@
 import pygame
+from stateManager import StateManager
 
 class State:
-    pass
+    """
+    Base Template for all States
+    """
+    def __init__(self, screen: pygame.Surface, state_manager: StateManager) -> None:
+        self.screen = screen
+        self.state_manager = state_manager
+    
+    def draw(self):
+        # Handles UI of State
+        pass
+
+    def update(self):
+        # Handles LOGIC of State
+        pass
+
+    def handle_events(self):
+        # Handles EVENTS related to State
+        pass
 
 # ---------------------------------------------------------------------------
 class MainMenu(State):
     """
     Main Menu Screen
     """
-    pass
+    
 
 class OnlineMenu(State):
     """
