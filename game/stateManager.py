@@ -52,8 +52,8 @@ class StateManager:
         else:
             raise StateManagerError("Current State is NONE.")
     
-    def handle_events(self, events) -> None:
+    def handle_events(self, event) -> None:
         if self.change_state:
-            self.current_state.handle_events()
+            self.current_state.handle_events(event)
         else:
             raise StateManagerError("Current State is NONE.")
